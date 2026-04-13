@@ -1,0 +1,30 @@
+cat > .gitignore << EOF
+# Java / Maven
+target/
+*.jar
+*.class
+*.log
+
+# Gradle
+.gradle/
+build/
+*.gradle
+
+# k6 load testing (important for our Kafka experiments)
+k6
+k6.exe
+*.js.map
+results/
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Kafka local data (if any)
+kafka-logs/
+EOF
